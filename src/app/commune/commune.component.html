@@ -1,0 +1,15 @@
+<div>
+  <h1>{{message}}</h1>
+</div>
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <form >
+      <label for="region" class="form-group">Region</label>
+      <input type="text" class="form-control" id="region" [(ngModel)]="commune['region']" name="region">
+      <label for="departement" class="form-group">Departement</label>
+      <input type="text" class="form-control" id="departement" [(ngModel)]="commune['nom']" name="nom">
+
+      <button class="btn btn-success" (click)="ajoutCommune()" type="submit"  >Enregistrer</button>
+    </form>
+  </div>
+</div>
